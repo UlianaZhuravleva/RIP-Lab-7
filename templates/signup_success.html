@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Success{% endblock %}
+
+{% block title_visible %}<h1>Завершение авторизации</h1>{% endblock %}
+
+{% block body %}
+    <p>Вы авторизованы!</p>
+    <a href="{% url 'logout' %}" class="btn btn-primary">Выйти</a>
+{% endblock %}
